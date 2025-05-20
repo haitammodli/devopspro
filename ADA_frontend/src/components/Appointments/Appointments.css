@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
+
+.appointments-wrapper {
+  display: flex;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  font-family: 'Segoe UI', sans-serif;
+  color: #35435d;
+  gap: 2rem;
+}
+
+/* === Sidebar gauche === */
+.appointments-sidebar {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.appointments-sidebar h2 {
+  font-size: 1.6rem;
+  color: #6c5ce7;
+}
+
+.sidebar-section h4 {
+  margin-bottom: 0.5rem;
+  color: #00b894;
+}
+
+.sidebar-section ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #636e72;
+}
+
+.sidebar-btn {
+  margin: 0.3rem 0;
+  background-color: #81ecec;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #2d3436;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-btn:hover {
+  background-color: #00cec9;
+  color: white;
+}
+
+.support-box {
+  margin-top: auto;
+  background-color: #dff9fb;
+  padding: 1rem;
+  border-left: 5px solid #00cec9;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.support-box a {
+  color: #0984e3;
+  text-decoration: none;
+}
+
+/* === Contenu principal === */
+.appointments-container {
+  flex: 2.5;
+}
+
+.appointments-container h2 {
+  color: #6a89cc;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  background-color: #a29bfe;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(162, 155, 254, 0.3);
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #6c5ce7;
+  transform: translateY(-2px);
+}
+
+.appointment-list {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+}
+
+.appointment-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #dfe6e9;
+}
+
+.appointment-info {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  background-color: #dff9fb;
+  color: #34495e;
+  padding: 1rem;
+  border-left: 5px solid #00cec9;
+  border-radius: 8px;
+}

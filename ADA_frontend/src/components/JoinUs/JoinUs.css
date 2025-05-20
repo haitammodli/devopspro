@@ -1,0 +1,145 @@
+/* src/components/JoinUs/joinus.css */
+
+.joinus-container {
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  min-height: 100vh;
+}
+
+.joinus-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.joinus-header h1 {
+  font-size: 2.2rem; /* Taille réduite */
+  color: #1d9f92;
+  font-weight: bold;
+}
+
+.joinus-header p {
+  font-size: 1.1rem; /* Taille réduite */
+  color: #1a0404;
+  margin-top: 0.5rem;
+}
+
+.joinus-info, .joinus-positions, .joinus-form {
+  margin-bottom: 2rem;
+}
+
+.joinus-info h2, .joinus-positions h2, .joinus-form h2 {
+  font-size: 1.8rem; /* Taille réduite */
+  color: #1d9f92;
+  margin-bottom: 1rem;
+}
+
+.joinus-info p, .joinus-form p {
+  font-size: 1rem; /* Taille réduite */
+  color: #1a0404;
+  line-height: 1.6;
+}
+
+.position-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.position-list .position {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 121, 107, 0.1);
+  flex-basis: 30%;
+  transition: all 0.3s ease;
+}
+
+.position-list .position:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 121, 107, 0.15);
+}
+
+.position-list .position h3 {
+  color: #dd9d53;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.position-list .position p {
+  font-size: 1rem;
+  color: #1a0404;
+}
+
+.position-list .position a {
+  text-decoration: none;
+  color: #1d9f92;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.position-list .position a:hover {
+  text-decoration: underline;
+}
+
+.joinus-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 121, 107, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.joinus-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.joinus-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.joinus-form .form-group input,
+.joinus-form .form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.joinus-form .form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.apply-btn {
+  background-color: #4b7974;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #56a396;
+}
+
+.joinus-form .form-group input[type="file"] {
+  background-color: #f0f0f0;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .position-list .position {
+    width: 100%;
+  }
+}

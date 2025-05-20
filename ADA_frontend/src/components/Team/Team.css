@@ -1,0 +1,100 @@
+/* src/components/Team/team.css */
+
+.team-container {
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-header h1 {
+  font-size: 2.8rem;
+  color: #00796b;
+}
+
+.team-header p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-card {
+  background: #ffffff;
+  padding: 2rem;
+  width: 280px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 150, 136, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 150, 136, 0.15);
+}
+
+.team-icon {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  color: #00796b;
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.team-bio {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.team-quote {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.team-quote blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #33691e;
+  background-color: #f1f8e9;
+  border-left: 6px solid #8bc34a;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .team-card {
+    width: 90%;
+  }
+
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .team-header p {
+    font-size: 1rem;
+  }
+}

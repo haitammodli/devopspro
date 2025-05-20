@@ -1,0 +1,157 @@
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:#85bdb6; 
+  padding: 15px 7%;
+  transition: 0.5s;
+  box-shadow: #bce3dc;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espace entre les éléments à droite */
+  margin-left: 20px; /* espace entre search box et boutons */
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e1f5f2; 
+  border: 1px solid #bce3dc;
+  box-shadow:#bce3dc;
+  cursor: pointer;
+}
+
+ul {
+flex: 1;
+list-style: none;
+text-align: center;
+}
+
+ul li {
+display: inline-block;
+margin: 10px 20px;
+font-size: 18px;
+cursor: pointer;
+}
+
+.toggle-icon {
+width: 40px;
+cursor: pointer;
+margin-left: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 20px; /* espace entre search et les liens */
+  background: #ffffff;
+  
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 6px;
+  width: 120px; /* Réduction de la largeur */
+}
+
+
+.search-box img {
+width: 20px;
+cursor: pointer;
+
+}
+
+.nav-link {
+color: #444;
+text-decoration: none;
+margin: 0 10px;
+transition: 0.3s;
+}
+
+.nav-link:hover {
+color: #d8dcdf; /* accent bleu discret */
+}
+
+.dark .navbar {
+background: #1c6171;
+color: #eee;
+}
+
+.dark .search-box {
+background: #fffefe;
+}
+
+.dark .search-box input {
+color: #222;
+}
+
+.dark .search-box input::placeholder {
+color: #666;
+}
+
+.dark .nav-link {
+color: #eee;
+}
+
+.dark .nav-link:hover {
+color: #eee;
+}
+
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.auth-buttons {
+  display: flex;
+  gap: 10px; /* espace entre les boutons */
+}
+
+.login-btn,
+.signup-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  background-color: #00796b;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #004d40;
+}
+
+
+.login-btn {
+  background-color: var(--primary-color);
+  color: var(--navbar-bg);
+}
+
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.signup-btn {
+  background-color: var(--primary-color);
+  color: var(--navbar-bg);
+}
+
+.signup-btn:hover {
+  background-color: #1c6171;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

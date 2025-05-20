@@ -1,0 +1,172 @@
+/* Base Layout */
+.form-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7fdf9;
+}
+
+/* Left Panel - Info */
+.form-side-info {
+  flex: 1;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #d4f1e3, #a8e6cf);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(34, 139, 34, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-side-info h2 {
+  color: #2d6a4f;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.form-side-info p {
+  color: #52796f;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-side-info img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+/* Right Panel - Form */
+.patient-form-container {
+  flex: 2;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #e9fef4);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 128, 0, 0.08);
+  position: relative;
+}
+
+.medical-header h1 {
+  color: #2f855a;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.medical-header p {
+  color: #4b7f63;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Emergency Button */
+.emergency-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-btn:hover {
+  background-color: #ff4d4d;
+}
+
+.emergency-icon {
+  font-size: 1.2rem;
+}
+
+/* Form Sections */
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section h2 {
+  color: #37996b;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: #344e41;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #b7e4c7;
+  border-radius: 8px;
+  background-color: #f0fdf4;
+  font-size: 1rem;
+  color: #2d6a4f;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #74c69d;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #40916c;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2d6a4f;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+@keyframes blink {
+  0%, 100% {
+    background-color: #ff6b6b;
+    color: #fff;
+  }
+  50% {
+    background-color: #ffffff;
+    color: #ff6b6b;
+  }
+}
+
+/* Classe qui déclenche le clignotement */
+.blinking {
+  animation: blink 1s infinite;
+}

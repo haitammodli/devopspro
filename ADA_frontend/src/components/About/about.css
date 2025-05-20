@@ -1,0 +1,152 @@
+/* src/components/About/about.css */
+.about-page {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section globale */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Image à gauche + boutons */
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte à droite */
+.about-right {
+  flex: 2;
+  padding: 1rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #2d9084;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #0288d1;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Boutons */
+.about-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-btn {
+  background-color: #00796b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #004d40;
+}
+
+.about-btn.secondary {
+  background-color: #dd9d53;
+}
+
+.about-btn.secondary:hover {
+  background-color: #01579b;
+}
+
+/* Listes */
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.about-list li {
+  background-color: #ffe0b2;
+  border-left: 5px solid #fb8c00;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* Cartes côte à côte */
+.horizontal-cards {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 150, 136, 0.08);
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Citations */
+.quotes {
+  flex-direction: column;
+  align-items: center;
+}
+
+.quotes blockquote {
+  background: #f1f8e9;
+  border-left: 6px solid #8bc34a;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  color: #33691e;
+  border-radius: 6px;
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-right {
+    padding: 0;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+}

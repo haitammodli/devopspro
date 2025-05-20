@@ -1,0 +1,129 @@
+/* Global container */
+.home-container {
+  padding: 2rem;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.hero-text {
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #2d0000;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.home-button {
+  padding: 0.8rem 1.6rem;
+  background-color: #dd9d53;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #00796b;
+}
+
+/* Hero image */
+.hero-image img {
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+} 
+.home-footer {
+  background-color: #004d40;
+  
+  width: 100%;             
+  margin: 3rem 0 0 0;         /* Supprime les marges latérales */
+  padding: 1rem 0.5rem;       /* Réduit la hauteur */
+  text-align: center;
+  left :0;
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-footer p {
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.home-footer p:last-child {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+
+/* Responsive for extra cards in grid layout (optional improvement) */
+@media (min-width: 768px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}

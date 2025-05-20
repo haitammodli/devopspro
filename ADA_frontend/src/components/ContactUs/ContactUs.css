@@ -1,0 +1,76 @@
+/* src/components/ContactUs/contactus.css */
+
+.contactus-container {
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.contactus-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contactus-header h1 {
+  font-size: 2.8rem;
+  color: #00796b;
+}
+
+.contactus-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.contactus-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactus-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 121, 107, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactus-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 121, 107, 0.15);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #0288d1;
+  margin-bottom: 1rem;
+}
+
+.contactus-box a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contactus-box a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contactus-box {
+    width: 90%;
+  }
+}
