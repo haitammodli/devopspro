@@ -20,7 +20,7 @@ const About = () => {
           <h1 className="about-title">About MediCare</h1>
           <p className="about-description">
             Advanced Medical Assistant is an intelligent platform designed to assist healthcare professionals 
-            in managing patient information, monitoring health conditions, and enhancing decision-making through AI-powered tools.
+            in managing patient information, monitoring health conditions and enhancing decision-making through AI-powered tools.
           </p>
 
           <h2 className="about-subtitle">Our Mission</h2>
