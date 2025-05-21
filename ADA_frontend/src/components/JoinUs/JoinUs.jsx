@@ -1,5 +1,5 @@
 // src/components/JoinUs/JoinUs.jsx
-import './joinus.css';
+import './JoinUs.css';
 import { useState } from 'react';
 
 const JoinUs = () => {
