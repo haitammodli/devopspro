@@ -20,9 +20,6 @@ const Navbar1 = ({theme , setTheme}) => {
         <Link to="/"  className='nav-link'>Home</Link>
         </li>
         <li>
-        <Link to="/about"  className='nav-link'>About</Link>
-        </li>
-        <li>
         <Link to="/espacepatient"  className='nav-link'>PatientSpace</Link>
         </li>
         <li>

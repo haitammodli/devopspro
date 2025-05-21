@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar1 from "./components/Navbar/Navbar1";
 import Chatbot from "./components/Chatbot/Chatbot";
-import About from "./components/About/About";
 import Home from "./components/Home/home";
 import PatientForm from "./components/Patient/PatientForm";
 import Signup from "./components/Signup/signup";
@@ -32,7 +31,6 @@ const App = () => {
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/patient" element={<PatientForm />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
