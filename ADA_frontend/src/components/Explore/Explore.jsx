@@ -1,5 +1,5 @@
 // src/components/Explore/Explore.jsx
-import './explore.css';
+import './Explore.css';
 import { FaHeartbeat, FaRobot, FaUserMd, FaShieldAlt, FaSmileBeam } from 'react-icons/fa';
 
 const Explore = () => {

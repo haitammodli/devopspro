@@ -1,5 +1,5 @@
 // src/components/Team/Team.jsx
-import './team.css';
+import './Team.css';
 import { FaStethoscope, FaLaptopMedical, FaBrain, FaUserNurse } from 'react-icons/fa';
 
 const teamMembers = [
